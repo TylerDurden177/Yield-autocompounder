@@ -1,0 +1,66 @@
+- Deploying the contract
+
+To deploy the contract, you need to have a wallet with some ETH in it. You can use [Metamask](https://metamask.io/) or [MyEtherWallet](https://www.myetherwallet.com/) to create a wallet.
+
+Once you have a wallet, you can deploy the contract using [Remix](https://remix.ethereum.org/).
+
+1. Copy the contract code from [AutoCompounder.sol](https://github.com/saurabh-hirani/auto-compounder/blob/master/contracts/AutoCompounder.sol) and paste it in the Remix IDE.
+2. Select the `Injected Web3` environment.
+3. Click on the `Deploy` button.
+4. You will be prompted to sign the transaction. Click on `Sign` to sign the transaction.
+5. Once the transaction is mined, you will see the contract address in the `Deployed Contracts` section.
+
+- Adding tokens
+
+To add a token, you need to call the `addToken` function.
+
+1. Click on the `addToken` function in the `AutoCompounder` contract.
+2. Enter the token name in the `_token` field.
+3. Click on the `transact` button.
+4. You will be prompted to sign the transaction. Click on `Sign` to sign the transaction.
+5. Once the transaction is mined, you will see the token added in the `interestRates` mapping.
+
+- Updating interest rate
+
+To update the interest rate for a token, you need to call the `updateInterestRate` function.
+
+1. Click on the `updateInterestRate` function in the `AutoCompounder` contract.
+2. Enter the token name in the `_token` field.
+3. Enter the interest rate in the `_rate` field.
+4. Click on the `transact` button.
+5. You will be prompted to sign the transaction. Click on `Sign` to sign the transaction.
+6. Once the transaction is mined, you will see the interest rate updated in the `interestRates` mapping.
+
+- Depositing tokens
+
+To deposit tokens, you need to call the `deposit` function.
+
+1. Click on the `deposit` function in the `AutoCompounder` contract.
+2. Enter the token name in the `_token` field.
+3. Enter the amount of tokens you want to deposit in the `value` field.
+4. Click on the `transact` button.
+5. You will be prompted to sign the transaction. Click on `Sign` to sign the transaction.
+6. Once the transaction is mined, you will see the balance updated in the `balances` mapping.
+
+
+- Compounding interest
+
+To compound interest on your balance, you need to call the `compoundInterest` function.
+
+1. Click on the `compoundInterest` function in the `AutoCompounder` contract.
+2. Enter the token name in the `_token` field.
+3. Click on the `transact` button.
+4. You will be prompted to sign the transaction. Click on `Sign` to sign the transaction.
+5. Once the transaction is mined, you will see the balance updated in the `balances` mapping.
+
+- Withdrawing tokens
+
+To withdraw tokens, you need to call the `withdraw` function.
+
+1. Click on the `withdraw` function in the `AutoCompounder` contract.
+2. Enter the token name in the `_token` field.
+3. Enter the amount of tokens you want to withdraw in the `_amount` field.
+4. Click on the `transact` button.
+5. You will be prompted to sign the transaction. Click on `Sign` to sign the transaction.
+6. Once the transaction is mined, you will see the balance updated in the `balances` mapping.
+

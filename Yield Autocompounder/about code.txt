@@ -1,0 +1,6 @@
+This is a Solidity smart contract code for an auto compounding platform. 
+The contract allows users to deposit tokens into the platform and the deposited tokens earn interest over time. 
+The contract provides functions for deposit, withdraw, compounding interest, updating interest rate, adding new tokens and removing tokens. 
+The contract has a mapping to store the balances of users and another mapping to store the interest rates of different tokens. 
+The contract also maintains a pool of interest earned from all deposited tokens. The contract is owned by a single owner who has the privilege to add, remove and update the interest rates of tokens. 
+The contract logs several events for deposit, withdrawal, compounding interest, updating interest rate, adding and removing tokens.
